@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custom_toast_layout"
+    android:orientation="vertical"
+    android:background="#F14E23" >
+
+
+    Context context = getApplicationContext(); //The context to
+    use. Usually your Application or Activity object
+    CharSequence message = "You just clicked the OK button";
+    //Display string
+    int duration = Toast.LENGTH_SHORT; //How long the toast
+    message will lasts
+    Toast toast = Toast.makeText(context, message, duration);
+    toast.show();
+    BSc (Hons) in Information Technology
+    Year 2
+    Tutorial 02
+    IT2010 – Mobile Application Development
+    Semester 2, 2020
+    <ImageView
+        android:id="@+id/custom_toast_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Hello world"
+      />
+
+    <TextView
+        android:id="@+id/custom_toast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="To"
+        android:text="JavaTpoint custom Toast" />
+</LinearLayout>
